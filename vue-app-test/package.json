@@ -1,0 +1,48 @@
+{
+  "name": "vue-app-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port=3001",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "add-component": "cd src/components && touch css/$NAME.css && touch js/$NAME.js && cp view/ExampleComponent.vue view/$NAME.vue",
+    "del-component": "cd src/components && rm css/$NAME.css && rm js/$NAME.js && rm view/$NAME.vue"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bootstrap-vue": "^2.17.3",
+    "chart.js": "^2.9.3",
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^4.3.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

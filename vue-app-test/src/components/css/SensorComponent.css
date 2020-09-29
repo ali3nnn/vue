@@ -1,0 +1,16 @@
+#sensor-component {
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.sensor-chart {
+    border-radius: 13px
+}
+
+.sensor-chart {
+    background: #343a40;
+    margin: 10px 0px;
+    padding:10px
+}
